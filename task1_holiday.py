@@ -10,9 +10,9 @@ class ProgramClass:
             "7": "Воскресение"
         }
         this.strForInput = "Введите пожалуйста число: "
-        this.InitSets()
+        this.InitClear()
 
-    def InitSets(this):
+    def InitClear(this):
         import os
         clear = lambda: os.system("CLS")
         clear()
