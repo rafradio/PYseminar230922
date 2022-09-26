@@ -10,6 +10,12 @@ class ProgramClass:
             "7": "Воскресение"
         }
         this.strForInput = "Введите пожалуйста число: "
+        this.InitSets()
+
+    def InitSets(this):
+        import os
+        clear = lambda: os.system("CLS")
+        clear()
 
     def InputFunc(this):
         this.inputStr = input(this.strForInput)
@@ -25,6 +31,9 @@ class ProgramClass:
             print("Да, это выходной день - ", this.dictWeekDay[this.inputStr])
         else:
             print("Нет, это рабочий день - ", this.dictWeekDay[this.inputStr])
+
+    
+        
 
 #   исполнение программы
 
