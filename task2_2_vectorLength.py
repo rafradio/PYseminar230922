@@ -1,6 +1,8 @@
+import os
+import math
+
 class InitSets:
     def __init__(this):
-        import os
         clear = lambda: os.system("CLS")
         clear()
 
@@ -28,7 +30,6 @@ class VectorLength:
         this.FindLength()
 
     def FindLength(this):
-        import math
         length = math.sqrt((this.secondtDot.X - this.firstDot.X)**2 + (this.secondtDot.Y - this.firstDot.Y)**2)
         length = round(length, 2)
         print(f"Длина вектора между точками равна {length}")
