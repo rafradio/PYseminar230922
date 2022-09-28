@@ -14,14 +14,12 @@ class ProgramXY:
     def InputFunc(this):
         while this.counterInput < 2:
             this.inputStr = input(this.strLegend[this.counterInput])
-            # print(this.inputStr.isdigit())
             if this.inputStr.lstrip("-").isdigit() and this.inputStr != "0":
                 this.coorXY.append(int(this.inputStr))
                 this.counterInput += 1
-                this.InputFunc()
             else:
                 print("Вы ввели не соответсвующую запись! Попробуйте еще раз")
-                this.InputFunc()
+            this.InputFunc()
         return
 
     def CheckQuater(this):
